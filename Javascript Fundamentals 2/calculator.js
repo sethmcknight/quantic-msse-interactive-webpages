@@ -13,9 +13,6 @@ function add(x, y) {
 
 //add(3, 5);
 
-prompt('Type in a number.');
-prompt('Type in another number.');
-
 let num1 = parseInt(prompt('Type in a number.'));
 let num2 = parseInt(prompt('Type in another number.'));
 
