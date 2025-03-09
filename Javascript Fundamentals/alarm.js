@@ -1,4 +1,9 @@
-let time = 5;
-const name = "Ken";
-alert (name + ", wake up in " + time + " minutes!");
+let time = 30;
+const message = "Wake up!";
 
+for (let i=0; i<=time; i++){
+    if (i === time){
+        alert(message)
+    } else {
+        console.log(i);
+};
