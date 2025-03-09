@@ -16,7 +16,7 @@ function add(x, y) {
 prompt('Type in a number.');
 prompt('Type in another number.');
 
-let num1 = prompt('Type in a number.');
-let num2 = prompt('Type in another number.');
+let num1 = parseInt(prompt('Type in a number.'));
+let num2 = parseInt(prompt('Type in another number.'));
 
 alert(add(num1, num2));
