@@ -12,3 +12,10 @@ function addListItem(text) {
 
 addListItem("Eat");
 
+/* store all list items in an array
+let $items = $list.getElementsByTagName('li');
+*/
+
+function removeItem(index) {
+    $items[index].remove();
+}
