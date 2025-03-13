@@ -33,9 +33,12 @@ function addItem(){
     let $item = document.createElement("li")
     let $input = document.querySelector("#myInput")
     $item.textContent = $input.value
+    // make sure new items get the Strike Item functionality
+    item.addEventListener("click", strikeItem);
     $list.append($item)
     num += 1
     update()
+
 }
 
 // Remove an item from the list when the childNode button of the parentNode li is clicked
