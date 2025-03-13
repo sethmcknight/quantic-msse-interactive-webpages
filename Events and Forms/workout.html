@@ -11,10 +11,14 @@
 <body>
     <h2>Ken's Workout<span></span></h2>
     <ul id="my-list">
-        <li>Push ups</li>
-        <li>Sit ups</li>
+        <li>Push ups<button>X</button></li>
+        <li>Sit ups<button>X</button></li>
     </ul>
-
+    <!-- Form for Ken to add a new task to his workout list -->
+    <form onsubmit="return false" class="bottom">
+        <input type="text" id="myInput" placeholder="Enter a task..."/>
+        <button id="addBtn">Add</button>
+    </form>
 
 </body>
 </html>
