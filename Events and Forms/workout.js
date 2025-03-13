@@ -33,7 +33,7 @@ function update(){
 function addButton(){
     let $button = document.createElement("button")
     $button.textContent = "X"
-    item.append($button)
+    $item.append($button)
     $button.addEventListener("click", removeItem)
 }
 
@@ -42,9 +42,10 @@ function addItem(){
     let $input = document.querySelector("#myInput")
     $item.textContent = $input.value
     // make sure new items get the Strike Item functionality
-    item.addEventListener("click", strikeItem)
+    $item.addEventListener("click", strikeItem)
     // reset the value of $input to an empty string
     $input.value = ""
+    addButton($item)
     $list.append($item)
     num += 1
     update()
