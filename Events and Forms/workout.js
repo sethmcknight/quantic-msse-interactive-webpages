@@ -30,7 +30,7 @@ function update(){
 }
 
 // addButton function to make sure a 'Remove' button exists for all newly added items
-function addButton(){
+function addButton($item){
     let $button = document.createElement("button")
     $button.textContent = "X"
     $item.append($button)
